@@ -1,0 +1,105 @@
+body {
+	background: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+video {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	opacity: 0.5;
+}
+
+time {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	font-family: "Go 2 Old Western";
+	padding: 30px;
+	bottom: 115px;
+}
+
+time span {
+	border-radius: 50px;
+  padding: 17px 10px;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.8);
+  vertical-align: middle;
+  opacity: 0.6;
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+time span small {
+	font-size: 30px;
+}
+
+time .dia {
+	color: #900000;
+	margin-right: 15px;
+}
+
+time .hora {
+	color: #900000;
+}
+
+time .minuto {
+	color: #900000;
+}
+
+time .segundo {
+	color: #900000;
+	
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	display: block;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+}
+
+nav ul {
+	padding: 30px;
+	background-color: rgba(0,0,0,0.8);
+	height: 100%;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #900000;
+}
+
+figure {
+	position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -100px;
+  border: 1px solid white;
+  opacity: 0.5;
+}

@@ -23,8 +23,7 @@ time {
 	padding: 30px;
 	top: 50%;
 	right: 4%;
-	margin-top: -130px;
-	
+	margin-top: -130px;	
 	width: 32%;
 }
 
@@ -60,21 +59,25 @@ time .dia {
 	color: #900000;
 	margin-right: 15px;
 	display: inline-block;
+	border-radius: 61px;
 }
 
 time .hora {
 	color: #900000;
 	display: inline-block;
+	border-radius: 61px;
 }
 
 time .minuto {
 	color: #900000;
+	border-radius: 61px;
 	display: inline-block;
 }
 
 time .segundo {
 	color: #900000;
 	display: inline-block;
+	border-radius: 61px;
 	
 }
 

@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Chewy|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
 </head>
 <body>
 	<figure>
@@ -14,13 +17,16 @@
 		<span class="slogan"></span>
 	</figure>
 	<video src="teaser-site.mp4" autoplay loop="loop"></video>
-	<time>
+	<time id="getting-started">
 		<h2>21 de Agosto, 2015</h2>
-		<span class="dia">04<small>d</small></span>
-		<span class="hora">05<small>h</small></span>
-		<span class="minuto">32<small>m</small></span>
-		<span class="segundo">50<small>s</small></span>
+		<span class="dia"></span>
+		<span class="hora"></span>
+		<span class="minuto"></span>
+		<span class="segundo"></span>
 	</time>
+
+	<div class="chart" data-percent="1">73%</div>
+
 	<div class="video-link">
 		<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="/img/video.jpg" alt=""></a>
 	</div>
@@ -30,5 +36,32 @@
 			<li><a href="">Arrecadação de Leite</a></li>
 		</ul>
 	</nav>
+
+	<script type="text/javascript">
+		var ticksDaDataFinal = new Date(2015, 07, 21, 0, 0, 0).getTime();
+
+		$('.chart').easyPieChart({
+	        animate: 2000
+	    });
+	    
+		setInterval(function() {
+			var ticksDaDataAtual = new Date().getTime();
+			var percentual = ticksDaDataFinal * ticksDaDataAtual / 100;
+
+	        // $('.chart').data('easyPieChart').update(percentual.toFixed(2));
+	    }, 1000);
+
+		$("#getting-started")
+			.countdown("2015/08/10", function(event) {
+				$(this).children(".dia").empty().html(event.strftime('%D') + criarMarcador("d"));
+				$(this).children(".hora").empty().html(event.strftime('%H') + criarMarcador("h"));
+				$(this).children(".minuto").empty().html(event.strftime('%M') + criarMarcador("m"));
+				$(this).children(".segundo").empty().html(event.strftime('%S') + criarMarcador("s"));
+		});
+
+		function criarMarcador(marcador) { 
+			return "<small>" + marcador + "</small>";
+		}
+	</script>
 </body>
 </html>

@@ -18,12 +18,12 @@ video {
 
 time {
 	position: absolute;
-	width: 100%;
-	text-align: center;
 	z-index: 2;
 	font-family: "Go 2 Old Western";
 	padding: 30px;
-	bottom: 115px;
+	top: 50%;
+	left: 5%;
+	margin-top: -105px;
 }
 
 time span {
@@ -94,12 +94,46 @@ nav ul li a:hover {
 }
 
 figure {
+	width: 300px;
+	z-index: 2;
 	position: absolute;
-  z-index: 2;
-  top: 35%;
-  left: 50%;
-  margin-top: -140px;
-  margin-left: -100px;
-  border: 1px solid white;
-  opacity: 0.5;
+	text-align: center;
+	opacity: 0.5;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -215px;
+}
+
+figure img {
+	display: inline-block;
+}
+
+.slogan {
+    background: url(../img/24h.svg) no-repeat;
+    width: 300px;
+	  margin-left: 20px;
+    height: 100px;
+	display: inline-block;
+}
+
+.video-link {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	margin-top: -140px;
+	width: 25%;
+	z-index: 2;
+	transition: transform;
+	-webkit-box-shadow: 0 0 20px 1px rgba(0,00,00,0.5);
+			box-shadow: 0 0 20px 1px rgba(0,00,00,0.5);
+}
+
+.video-link:hover {
+	transform: scale(1.1);
+}
+
+.video-link img {
+	width: 100%;
+	height: auto;
 }

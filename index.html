@@ -14,7 +14,7 @@
 			<img src="Logo-textura.png" alt="">
 			<span class="slogan"></span>
 		</figure>
-		<video src="teaser-site.mp4" autoplay loop="loop"></video>
+		<video id="video" src="teaser-site.mp4" autoplay loop="loop"></video>
 		<time id="getting-started">
 			<h2>21 de Agosto, 2015</h2>
 			<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
@@ -29,13 +29,15 @@
 		<div class="video-link">
 			<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="img/video.jpg" alt=""></a>
 		</div>
-		<nav>
+		
+	</header>
+	
+	<nav>
 			<ul>
 				<li><a id="link-about">O que é o H4ckathon</a></li>
 				<li><a id="link-leite">Arrecadação de Leite</a></li>
 			</ul>
 		</nav>
-	</header>
 	
 	<article id="about">
 		<h1>
@@ -51,7 +53,7 @@
 	<article id="leite">
 		<h1>
 			<big>Arrecadação de Leite</big>
-			<small>Como assim?</small>	
+			<small>Como assim?!</small>	
 			
 		</h1>
 		
@@ -79,6 +81,15 @@
 		$("#link-leite").click(function(){
             $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
 		})
+		
+		$("nav a").click(function(){
+            document.querySelector('#video').pause();
+		})
+		
+		$("header").click(function(){
+            document.querySelector('#video').play();
+		})
+		
 	</script>
 </body>
 </html>

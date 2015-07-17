@@ -16,13 +16,13 @@
 	<video src="teaser-site.mp4" autoplay loop="loop"></video>
 	<time id="getting-started">
 		<h2>21 de Agosto, 2015</h2>
+		<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
 		<span class="dia"></span>
 		<span class="hora"></span>
 		<span class="minuto"></span>
 		<span class="segundo"></span>
 	</time>
 
-	<div class="chart" data-percent="0"></div>
 
 	<div class="video-link">
 		<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="img/video.jpg" alt=""></a>
@@ -40,12 +40,7 @@
 	<script src="js/grafico.js"></script>
 	<script src="js/timer.js"></script>
 	<script>
-		var corDaBarra = '#ef1e25',
-			corDaBarraVazia = '#f2f2f2',
-			corDosPalitosIndicativos = '#dfe0e0';
-			
-		window.grafico.desenhar(corDaBarra, corDaBarraVazia, corDosPalitosIndicativos);
-
+		window.grafico.desenhar();
 		window.timer.iniciar();
 	</script>
 </body>

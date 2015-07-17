@@ -1,10 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: black;
 }
 
-* {
-	box-sizing: border-box;
+#header{
+	position: a
 }
+
 
 video {
 	position: fixed;
@@ -12,7 +17,6 @@ video {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: auto;
 	opacity: 0.5;
 }
 
@@ -55,13 +59,15 @@ time span small {
 	font-size: 30px;
 }
 
+
+
 time .dia {
 	color: #900000;
-	margin-right: 15px;
-	display: inline-block;
+	margin: 12px auto;
+	display: block;
 	border-radius: 61px;
-}
 
+}
 time .hora {
 	color: #900000;
 	display: inline-block;

@@ -1,10 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: black;
 	min-height: 100%;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 header {
@@ -20,7 +20,6 @@ video {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: auto;
 	opacity: 0.5;
 }
 
@@ -63,13 +62,15 @@ time span small {
 	font-size: 30px;
 }
 
+
+
 time .dia {
 	color: #900000;
-	margin-right: 15px;
-	display: inline-block;
+	margin: 12px auto;
+	display: block;
 	border-radius: 61px;
-}
 
+}
 time .hora {
 	color: #900000;
 	display: inline-block;
@@ -197,7 +198,8 @@ h1 small {
 	margin-left: 50px;
 	letter-spacing: .1em;
 	position: absolute;
-	bottom: 75px;
+	bottom: -20px;
+	font-weight: bold;
 }
 
 p {
@@ -205,5 +207,6 @@ p {
 	font-family: "Montserrat";
 	color: white;
 	line-height: 1.5em;
+	margin: 50px 50% 20px 150px;
 	
 }

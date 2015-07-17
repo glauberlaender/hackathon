@@ -4,12 +4,14 @@ window.grafico = (function() {
 	var dataFinal = new Date(2015, 07, 21, 0, 0, 0);
 	var diasDesdeOInicio = calcularDiasRestantes(dataInicial, dataFinal);
 
-	self.desenhar = function(corDaBarra, corDaBarraVazia, corDosPalitosIndicativos) {
-		$('.chart').easyPieChart({
+	self.desenhar = function() {
+		$('div[data-js="grafico"]').easyPieChart({
 			animate: 2000,
-			barColor: corDaBarra,
-			trackColor: corDaBarraVazia,
-			scaleColor: corDosPalitosIndicativos
+			barColor: '#900000',
+			scaleColor: false,
+			trackColor: '#dfe0e0',
+			lineWidth: 5,
+			size: 110
 		});
 
 		atualizarGrafico();
@@ -20,7 +22,7 @@ window.grafico = (function() {
 		var diasAteOFinal = calcularDiasRestantes(new Date(), dataFinal);
 		var percentual = diasAteOFinal * 100 / diasDesdeOInicio;
 
-		$('.chart').data('easyPieChart').update(70);
+		$('div[data-js="grafico"]').data('easyPieChart').update(100 - percentual);
 	}
 
 	function calcularDiasRestantes(dataInicial, dataFinal) {

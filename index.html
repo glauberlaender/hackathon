@@ -11,17 +11,18 @@
 <body>
 	<header>
 		<figure>
-			<img src="Logo-textura.png" alt="">
-			<span class="slogan"></span>
-		</figure>
-		<video src="teaser-site.mp4" autoplay loop="loop"></video>
-		<time id="getting-started">
-			<h2>21 de Agosto, 2015</h2>
-			<span class="dia"></span>
-			<span class="hora"></span>
-			<span class="minuto"></span>
-			<span class="segundo"></span>
-		</time>
+		<img src="Logo-textura.png" alt="">
+		<span class="slogan"></span>
+	</figure>
+	<video src="teaser-site.mp4" autoplay loop="loop"></video>
+	<time id="getting-started">
+		<h2>21 de Agosto, 2015</h2>
+		<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
+		<span class="dia"></span>
+		<span class="hora"></span>
+		<span class="minuto"></span>
+		<span class="segundo"></span>
+	</time>
 
 		<div class="chart" data-percent="0"></div>
 
@@ -41,8 +42,9 @@
 			<big>Arrecadação de Leite</big>
 			<small>Como assim?</small>	
 			
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		</h1>
+		
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 	</article>
 
 	<script src="js/jquery.js"></script>
@@ -51,13 +53,12 @@
 	<script src="js/grafico.js"></script>
 	<script src="js/timer.js"></script>
 	<script>
-		var corDaBarra = '#ef1e25',
-			corDaBarraVazia = '#f2f2f2',
-			corDosPalitosIndicativos = '#dfe0e0';
-			
-		window.grafico.desenhar(corDaBarra, corDaBarraVazia, corDosPalitosIndicativos);
-
+		window.grafico.desenhar();
 		window.timer.iniciar();
+		
+		var alturaDaTela = $(window).height();
+		
+		$('header').css('height', alturaDaTela + "px");
 	</script>
 </body>
 </html>

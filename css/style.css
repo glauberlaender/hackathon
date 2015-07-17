@@ -118,6 +118,7 @@ nav ul li a {
 	color: white;
 	font-size: 20px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -174,6 +175,7 @@ figure img {
 article {
 	background: black;
 	padding: 50px;
+	position: relative;
 }
 
 h1 {
@@ -209,4 +211,14 @@ p {
 	line-height: 1.5em;
 	margin: 50px 50% 20px 150px;
 	
+}
+
+.leite {
+	background: url(../img/leite.svg) no-repeat;
+	 width: 40%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  opacity: 0.5;
 }

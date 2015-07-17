@@ -11,18 +11,18 @@
 <body>
 	<header>
 		<figure>
-		<img src="Logo-textura.png" alt="">
-		<span class="slogan"></span>
-	</figure>
-	<video src="teaser-site.mp4" autoplay loop="loop"></video>
-	<time id="getting-started">
-		<h2>21 de Agosto, 2015</h2>
-		<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
-		<span class="dia"></span>
-		<span class="hora"></span>
-		<span class="minuto"></span>
-		<span class="segundo"></span>
-	</time>
+			<img src="Logo-textura.png" alt="">
+			<span class="slogan"></span>
+		</figure>
+		<video src="teaser-site.mp4" autoplay loop="loop"></video>
+		<time id="getting-started">
+			<h2>21 de Agosto, 2015</h2>
+			<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
+			<span class="dia"></span>
+			<span class="hora"></span>
+			<span class="minuto"></span>
+			<span class="segundo"></span>
+		</time>
 
 		<div class="chart" data-percent="0"></div>
 
@@ -31,13 +31,13 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="">O que é o H4ckathon?</a></li>
-				<li><a href="">Arrecadação de Leite</a></li>
+				
+				<li><a id="link-leite">Arrecadação de Leite</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<article>
+	<article id="leite">
 		<h1>
 			<big>Arrecadação de Leite</big>
 			<small>Como assim?</small>	
@@ -45,6 +45,7 @@
 		</h1>
 		
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<span class="leite"></span>
 	</article>
 
 	<script src="js/jquery.js"></script>
@@ -58,7 +59,11 @@
 		
 		var alturaDaTela = $(window).height();
 		
-		$('header').css('height', alturaDaTela + "px");
+		$('header, article').css('height', alturaDaTela + "px");
+		
+		$("#link-leite").click(function(){
+            $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
+		})
 	</script>
 </body>
 </html>

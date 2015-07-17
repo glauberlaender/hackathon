@@ -42,14 +42,14 @@ time h2 {
 }
 
 time span {
-  padding: 17px 0px;
-  display: inline-block;
-  background-color: rgba(0,0,0,0.8);
-  vertical-align: middle;
-  opacity: 0.6;
-  font-size: 50px;
-  width: 85px;
-  height: 80px;
+	padding: 17px 0px;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.8);
+	vertical-align: middle;
+	opacity: 0.6;
+	font-size: 50px;
+	width: 85px;
+	height: 80px;
 	border: 2px solid white;
 	font-family: 'Chewy', cursive;
 	
@@ -167,3 +167,4 @@ figure img {
 	width: 100%;
 	height: auto;
 }
+

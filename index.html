@@ -5,8 +5,33 @@
 	<title>H4ckathon | Dígitho Brasil</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/jbclock.css" />
 	<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Chewy|Montserrat:400,700' rel='stylesheet' type='text/css' />
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jbclock.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            JBCountDown({
+                secondsColor : "#7f1418",
+                secondsGlow  : "none",
+                
+                minutesColor : "#7f1418",
+                minutesGlow  : "none",
+                
+                hoursColor   : "#7f1418",
+                hoursGlow    : "none",
+                
+                daysColor    : "#7f1418",
+                daysGlow     : "none",
+                
+                startDate   : "1420106400",
+                endDate     : "1451556000",
+                now         : "1437142592"
+            });
+        });
+    </script>
 </head>
 <body>
 	<figure>
@@ -14,14 +39,65 @@
 		<span class="slogan"></span>
 	</figure>
 	<video src="teaser-site.mp4" autoplay loop="loop"></video>
-	<time id="getting-started">
+
+<!-- 	<time id="getting-started">
 		<h2>21 de Agosto, 2015</h2>
 		<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
 		<span class="dia"></span>
 		<span class="hora"></span>
 		<span class="minuto"></span>
-		<span class="segundo"></span>
+		<span class="segundo"></span> 
 	</time>
+ -->
+
+	     <div class="data">           
+            <div class="clock_days">
+                <div class="bgLayer">
+                    <canvas id="canvas_days" width="100" height="100">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">0</p>
+                        <p class="type_days">d</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clock_hours">
+                <div class="bgLayer">
+                    <canvas id="canvas_hours" width="100" height="100">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">0</p>
+                        <p class="type_hours">h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clock_minutes">
+                <div class="bgLayer">
+                    <canvas id="canvas_minutes" width="100" height="100">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">0</p>
+                        <p class="type_minutes">m</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clock_seconds">
+                <div class="bgLayer">
+                    <canvas id="canvas_seconds" width="100" height="100">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">0</p>
+                        <p class="type_seconds">s</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
 
 
 	<div class="video-link">

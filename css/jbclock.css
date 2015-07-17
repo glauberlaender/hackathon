@@ -1,0 +1,95 @@
+.data {
+    width:100%;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    padding: 30px;
+    top: 141%;
+    right: 4%;
+    margin-top: -130px;
+}
+
+.clock_days {
+    display: inline-block;
+    font-family: 'Chewy', cursive;
+
+}
+.clock_hours {
+    display: inline-block;
+    font-family: 'Chewy', cursive;
+
+}
+.clock_minutes {
+    display: inline-block;
+    font-family: 'Chewy', cursive;
+
+}
+.clock_seconds {
+    display: inline-block;
+}
+
+.bgLayer { 
+    position:relative; 
+}
+
+
+
+.text { position:absolute; 
+    top:45px; left:42px;}
+
+.val {
+    font-family: 'Chewy', cursive;
+    font-size: 42px;
+    font-weight:bold;
+    color:#FFF;
+    text-align:center;
+    line-height:50px;
+    margin-top:15px;
+    width:100px;
+}
+
+.type_days {
+    font-family: 'Chewy', cursive;
+    color:#ff6565;
+    width:100px;
+    text-align:center;
+    font-size:13px;
+    line-height:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.type_hours {
+    font-family: 'Chewy', cursive;
+    color:#378cff;
+    width:100px;
+    text-align:center;
+    font-size:13px;
+    line-height:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.type_minutes {
+    font-family: 'Chewy', cursive;
+    color:#9cdb7d;
+    width:100px;
+    text-align:center;
+    font-size:13px;
+    line-height:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.type_seconds {
+    font-family: 'Chewy', cursive;
+    color:#ffdc50;
+    width: 50px;
+    text-align:center;
+    font-size:13px;
+    line-height:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+

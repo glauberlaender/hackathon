@@ -31,11 +31,22 @@
 		</div>
 		<nav>
 			<ul>
-				
+				<li><a id="link-about">O que é o H4ckathon</a></li>
 				<li><a id="link-leite">Arrecadação de Leite</a></li>
 			</ul>
 		</nav>
 	</header>
+	
+	<article id="about">
+		<h1>
+			<big>O que é o H4ckathon</big>
+			<small>BOOOOM!!</small>	
+			
+		</h1>
+		
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<span class="hack"></span>
+	</article>
 	
 	<article id="leite">
 		<h1>
@@ -60,6 +71,10 @@
 		var alturaDaTela = $(window).height();
 		
 		$('header, article').css('height', alturaDaTela + "px");
+		
+		$("#link-about").click(function(){
+            $('html, body').animate({ scrollTop: $('#about').offset().top }, 'slow');
+		})
 		
 		$("#link-leite").click(function(){
             $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');

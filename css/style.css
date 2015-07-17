@@ -4,16 +4,19 @@
 
 body {
 	background: black;
+	min-height: 100%;
 }
 
-#header{
-	position: a
+header {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
 }
-
 
 video {
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -88,7 +91,7 @@ time .segundo {
 }
 
 nav {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	z-index: 2;
@@ -108,13 +111,22 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	margin-right: 20px;
+	padding-right: 40px;
+	margin-right: 40px;
+	border-right: 4px solid #900000;
+}
+
+nav ul li:last-of-type {
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
 }
 
 nav ul li a {
 	color: white;
 	font-size: 20px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -166,5 +178,64 @@ figure img {
 .video-link img {
 	width: 100%;
 	height: auto;
+}
+
+article {
+	background: black;
+	padding: 50px;
+	position: relative;
+}
+
+h1 {
+	display: block;
+	position: relative;
+}
+
+h1 big {
+	color: white;
+	font-size: 40px;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+
+h1 small {
+	font-family: 'Chewy', cursive;
+	color: #900000;
+	font-size: 30px;
+	display: block;
+	transform: rotate(-5deg);
+	margin-left: 50px;
+	letter-spacing: .1em;
+	position: absolute;
+	bottom: -20px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: white;
+	line-height: 1.5em;
+	margin: 50px 50% 20px 150px;
+	
+}
+
+.leite {
+	background: url(../img/leite.svg) no-repeat;
+	 width: 40%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.hack {
+	background: url(../img/hack.svg) no-repeat;
+	 width: 40%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
 }
 

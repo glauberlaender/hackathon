@@ -11,6 +11,7 @@
 
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jbclock.js"></script>
+	
 	<script type="text/javascript">
         $(document).ready(function(){
             JBCountDown({
@@ -32,92 +33,129 @@
             });
         });
     </script>
+
 </head>
 <body>
-	<figure>
-		<img src="Logo-textura.png" alt="">
-		<span class="slogan"></span>
-	</figure>
-	<video src="teaser-site.mp4" autoplay loop="loop"></video>
+	<header>
+		<figure>
+			<img src="Logo-textura.png" alt="">
+			<span class="slogan"></span>
+		</figure>
+		<video src="teaser-site.mp4" autoplay loop="loop"></video>
+		
+		<time id="getting-started">
+			<h2>21 de Agosto, 2015</h2>
+<!-- 			<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
+			<span class="dia"></span>
+			<span class="hora"></span>
+			<span class="minuto"></span>
+			<span class="segundo"></span> -->
+		</time>
 
-<!-- 	<time id="getting-started">
-		<h2>21 de Agosto, 2015</h2>
-		<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
-		<span class="dia"></span>
-		<span class="hora"></span>
-		<span class="minuto"></span>
-		<span class="segundo"></span> 
-	</time>
- -->
+
 
 	     <div class="data">           
             <div class="clock_days">
                 <div class="bgLayer">
-                    <canvas id="canvas_days" width="100" height="100">
+                    <canvas id="canvas_days" width="90" height="90">
                     </canvas>
                     <div class="text">
-                        <p class="val">0</p>
-                        <p class="type_days">d</p>
+                        <span class="val">0</span>
+                        <span class="texto">d</span>
                     </div>
                 </div>
             </div>
 
             <div class="clock_hours">
                 <div class="bgLayer">
-                    <canvas id="canvas_hours" width="100" height="100">
+                    <canvas id="canvas_hours" width="90" height="90">
                     </canvas>
                     <div class="text">
-                        <p class="val">0</p>
-                        <p class="type_hours">h</p>
+                        <span class="val">0</span>
+                        <span class="texto">h</span>
                     </div>
                 </div>
             </div>
 
             <div class="clock_minutes">
                 <div class="bgLayer">
-                    <canvas id="canvas_minutes" width="100" height="100">
+                    <canvas id="canvas_minutes" width="90" height="90">
                     </canvas>
                     <div class="text">
-                        <p class="val">0</p>
-                        <p class="type_minutes">m</p>
+                        <span class="val">0</span>
+                        <span class="texto">m</span>
                     </div>
                 </div>
             </div>
 
             <div class="clock_seconds">
                 <div class="bgLayer">
-                    <canvas id="canvas_seconds" width="100" height="100">
+                    <canvas id="canvas_seconds" width="90" height="90">
                     </canvas>
                     <div class="text">
-                        <p class="val">0</p>
-                        <p class="type_seconds">s</p>
+                        <span class="val">0</span>
+                        <span class="texto">s</span>
                     </div>
                 </div>
             </div>
 
         </div>
+		<div class="chart" data-percent="0"></div>
 
+		<div class="video-link">
+			<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="img/video.jpg" alt=""></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a id="link-about">O que é o H4ckathon</a></li>
+				<li><a id="link-leite">Arrecadação de Leite</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<article id="about">
+		<h1>
+			<big>O que é o H4ckathon</big>
+			<small>BOOOOM!!</small>	
+			
+		</h1>
+		
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<span class="hack"></span>
+	</article>
+	
+	<article id="leite">
+		<h1>
+			<big>Arrecadação de Leite</big>
+			<small>Como assim?</small>	
+			
+		</h1>
+		
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<span class="leite"></span>
+	</article>
 
+<!-- 	// <script src="js/jquery.js"></script>
+	// <script src="js/jquery.countdown.js"></script>
+	// <script src="js/jquery.easypiechart.min.js"></script>
+	// <script src="js/grafico.js"></script>
+	// <script src="js/timer.js"></script> -->
 
-
-	<div class="video-link">
-		<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="img/video.jpg" alt=""></a>
-	</div>
-	<nav>
-		<ul>
-			<li><a href="">O que é o H4ckathon?</a></li>
-			<li><a href="">Arrecadação de Leite</a></li>
-		</ul>
-	</nav>
-
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<script src="js/grafico.js"></script>
-	<script src="js/timer.js"></script>
 	<script>
 		window.grafico.desenhar();
 		window.timer.iniciar();
+		
+		var alturaDaTela = $(window).height();
+		
+		$('header, article').css('height', alturaDaTela + "px");
+		
+		$("#link-about").click(function(){
+            $('html, body').animate({ scrollTop: $('#about').offset().top }, 'slow');
+		})
+		
+		$("#link-leite").click(function(){
+            $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
+		})
 	</script>
 </body>
 </html>

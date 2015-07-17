@@ -44,52 +44,6 @@ time h2 {
 	font-weight: bold;
 }
 
-time span {
-	padding: 17px 0px;
-	display: inline-block;
-	background-color: rgba(0,0,0,0.8);
-	vertical-align: middle;
-	opacity: 0.6;
-	font-size: 50px;
-	width: 85px;
-	height: 80px;
-	border: 2px solid white;
-	font-family: 'Chewy', cursive;
-	
-}
-
-time span small {
-	font-size: 30px;
-}
-
-
-
-time .dia {
-	color: #900000;
-	margin: 12px auto;
-	display: block;
-	border-radius: 61px;
-
-}
-time .hora {
-	color: #900000;
-	display: inline-block;
-	border-radius: 61px;
-}
-
-time .minuto {
-	color: #900000;
-	border-radius: 61px;
-	display: inline-block;
-}
-
-time .segundo {
-	color: #900000;
-	display: inline-block;
-	border-radius: 61px;
-	
-}
-
 nav {
 	position: fixed;
 	left: 0;
@@ -182,9 +136,8 @@ figure img {
 
 article {
 	background: black;
-	padding: 100px;
+	padding: 50px;
 	position: relative;
-	border-bottom: 1px solid #900000;
 }
 
 h1 {
@@ -239,4 +192,3 @@ p {
   bottom: 0;
   right: 30px;
 }
-

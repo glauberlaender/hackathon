@@ -32,7 +32,7 @@ function JBCountDown(settings) {
                 ctx.arc(45,45,42, deg(0), deg((360/glob.total)*(glob.total - glob.days)));
                 ctx.lineWidth = 5;
                 ctx.stroke();
-                $(".clock_days .val").text(glob.days);
+                $(".dia .val").text(glob.days);
             },
             
             hours: function(){
@@ -50,7 +50,7 @@ function JBCountDown(settings) {
                 ctx.arc(45,45,42, deg(0), deg(15*glob.hours));
                 ctx.lineWidth = 5;
                 ctx.stroke();
-                $(".clock_hours .val").text(24 - glob.hours);
+                $(".horas .val").text(24 - glob.hours);
             },
             
             minutes : function(){
@@ -68,7 +68,7 @@ function JBCountDown(settings) {
                 ctx.arc(45,45,42, deg(0), deg(6*glob.minutes));
                 ctx.lineWidth = 5;
                 ctx.stroke();
-                $(".clock_minutes .val").text(60 - glob.minutes);
+                $(".minutos .val").text(60 - glob.minutes);
             },
             seconds: function(){
                 var cSec = $("#canvas_seconds").get(0);
@@ -86,7 +86,7 @@ function JBCountDown(settings) {
                 ctx.lineWidth = 5;
                 ctx.stroke();
         
-                $(".clock_seconds .val").text(60 - glob.seconds);
+                $(".segundos .val").text(60 - glob.seconds);
             }
         },
        

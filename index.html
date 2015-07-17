@@ -8,32 +8,6 @@
 	<link rel="stylesheet" href="css/jbclock.css" />
 	<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Chewy|Montserrat:400,700' rel='stylesheet' type='text/css' />
-
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="js/jbclock.js"></script>
-	
-	<script type="text/javascript">
-        $(document).ready(function(){
-            JBCountDown({
-                secondsColor : "#7f1418",
-                secondsGlow  : "none",
-                
-                minutesColor : "#7f1418",
-                minutesGlow  : "none",
-                
-                hoursColor   : "#7f1418",
-                hoursGlow    : "none",
-                
-                daysColor    : "#7f1418",
-                daysGlow     : "none",
-                
-                startDate   : "1420106400",
-                endDate     : "1451556000",
-                now         : "1437142592"
-            });
-        });
-    </script>
-
 </head>
 <body>
 	<header>
@@ -43,15 +17,8 @@
 		</figure>
 		<video id="video" src="teaser-site.mp4" autoplay loop="loop"></video>
 		<time id="getting-started">
-			<h2>21 de Agosto, 2015</h2>
-<!-- 			<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
-			<span class="dia"></span>
-			<span class="hora"></span>
-			<span class="minuto"></span>
-			<span class="segundo"></span> -->
+			<h2>21 de Agosto, 2015</h2>	
 		</time>
-
-
 
 	     <div class="data">           
             <div class="clock_days">
@@ -129,24 +96,20 @@
 	
 	<article id="leite">
 		<h1>
-			<big>Arrecadação de Leite</big>
-			<small>Como assim?!</small>	
+		<big>Arrecadação de Leite</big>
+		<small>Como assim?!</small>	
 			
 		</h1>
-		
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			<span class="leite"></span>
 	</article>
 
-<!-- 	// <script src="js/jquery.js"></script>
-	// <script src="js/jquery.countdown.js"></script>
-	// <script src="js/jquery.easypiechart.min.js"></script>
-	// <script src="js/grafico.js"></script>
-	// <script src="js/timer.js"></script> -->
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jbclock.js"></script>
+	<script src="js/grafico.js"></script>
 
 	<script>
 		window.grafico.desenhar();
-		window.timer.iniciar();
 		
 		var alturaDaTela = $(window).height();
 		
@@ -167,7 +130,6 @@
 		$("header").click(function(){
             document.querySelector('#video').play();
 		})
-		
 	</script>
 </body>
 </html>

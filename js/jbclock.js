@@ -5,8 +5,8 @@ function JBCountDown(settings) {
         return (Math.PI/180)*deg - (Math.PI/180)*90
     }
     
-    glob.total   = Math.floor((glob.endDate - glob.startDate)/86400);
-    glob.days    = Math.floor((glob.endDate - glob.now ) / 86400);
+    glob.total   = Math.floor((glob.endDate - glob.startDate) / 86400000);
+    glob.days    = Math.floor((glob.endDate - glob.now) / 86400000);
     glob.hours   = 24 - Math.floor(((glob.endDate - glob.now) % 86400) / 3600);
     glob.minutes = 60 - Math.floor((((glob.endDate - glob.now) % 86400) % 3600) / 60) ;
     glob.seconds = 60 - Math.floor((glob.endDate - glob.now) % 86400 % 3600 % 60);

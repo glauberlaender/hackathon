@@ -2,27 +2,30 @@
     font-family: 'Chewy', cursive;
     text-align: center;
     z-index: 2;
-    position: absolute;
     right: 5%;
 }
 
     .dia {
-        display: inline-block;
+        display: block;
         font-family: 'Chewy', cursive;
         margin: 0 5px 0 0;
+        width: 25%;
+        margin: 0 auto;
 
     }
     .horas {
         display: inline-block;
         font-family: 'Chewy', cursive;
-         margin: 0 5px 0 0;
+        margin: 0 5px 0 0;
+        width: 25%;
     }
     .minutos {
         display: inline-block;
         font-family: 'Chewy', cursive;
-         margin: 0 5px 0 0;
+        margin: 0 5px 0 0;
+        width: 25%;
     }
-    
+
     .segundos {
         display: inline-block;
     }
@@ -32,6 +35,13 @@
 }
 
 .text { 
+    position:absolute; 
+    top: 5px;
+    right: 25px;
+    font-weight: normal;
+}
+
+.text-dia { 
     position:absolute; 
     top: 5px;
     right: 25px;

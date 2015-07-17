@@ -41,8 +41,7 @@
 			<img src="Logo-textura.png" alt="">
 			<span class="slogan"></span>
 		</figure>
-		<video src="teaser-site.mp4" autoplay loop="loop"></video>
-		
+		<video id="video" src="teaser-site.mp4" autoplay loop="loop"></video>
 		<time id="getting-started">
 			<h2>21 de Agosto, 2015</h2>
 <!-- 			<div class="dia-animacao" data-js="grafico" data-percent="0"></div>
@@ -105,13 +104,15 @@
 		<div class="video-link">
 			<a href="https://www.youtube.com/watch?v=hcET4ZYDtTs" target="_blank"><img src="img/video.jpg" alt=""></a>
 		</div>
-		<nav>
+		
+	</header>
+	
+	<nav>
 			<ul>
 				<li><a id="link-about">O que é o H4ckathon</a></li>
 				<li><a id="link-leite">Arrecadação de Leite</a></li>
 			</ul>
 		</nav>
-	</header>
 	
 	<article id="about">
 		<h1>
@@ -120,14 +121,16 @@
 			
 		</h1>
 		
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Hackathon é a nossa maratona de programação, que rola na empresa desde 2012, sempre desafiando a criatividade, o senso de urgência, a capacidade técnica e o entrosamento entre os integrantes. O principal objetivo da maratona é tirar as pessoas do lugar comum e permitir a integração com os colegas, favorecendo um ambiente de colaboração e inovação.</p>
+			
+			<p>Durante 24h, os times terão que desenvolver um produto funcionando e apresentar para uma equipe julgadora, que nesta edição, será composta de todos os participantes do evento. Um produto será escolhido para ser o vencedor.</p>
 			<span class="hack"></span>
 	</article>
 	
 	<article id="leite">
 		<h1>
 			<big>Arrecadação de Leite</big>
-			<small>Como assim?</small>	
+			<small>Como assim?!</small>	
 			
 		</h1>
 		
@@ -156,6 +159,15 @@
 		$("#link-leite").click(function(){
             $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
 		})
+		
+		$("nav a").click(function(){
+            document.querySelector('#video').pause();
+		})
+		
+		$("header").click(function(){
+            document.querySelector('#video').play();
+		})
+		
 	</script>
 </body>
 </html>

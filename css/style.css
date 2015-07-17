@@ -182,8 +182,9 @@ figure img {
 
 article {
 	background: black;
-	padding: 50px;
+	padding: 100px;
 	position: relative;
+	border-bottom: 1px solid #900000;
 }
 
 h1 {

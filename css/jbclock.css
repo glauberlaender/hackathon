@@ -6,10 +6,9 @@
 }
 
     .dia {
-        display: block;
+        display: inline-block;
         font-family: 'Chewy', cursive;
         margin: 0 5px 0 0;
-        width: 25%;
         margin: 0 auto;
 
     }
@@ -17,13 +16,11 @@
         display: inline-block;
         font-family: 'Chewy', cursive;
         margin: 0 5px 0 0;
-        width: 25%;
     }
     .minutos {
         display: inline-block;
         font-family: 'Chewy', cursive;
         margin: 0 5px 0 0;
-        width: 25%;
     }
 
     .segundos {
@@ -32,13 +29,15 @@
 
 .circulo { 
     position:relative; 
+	width: 90px;
 }
 
 .text { 
     position:absolute; 
     top: 5px;
-    right: 25px;
+    right: 2px;
     font-weight: normal;
+	width: 90px;
 }
 
 .text-dia { 

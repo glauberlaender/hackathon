@@ -73,11 +73,110 @@
 	
 	<nav>
 		<ul>
+			<li><a id="link-programacao">Programação</a></li>
 			<li><a id="link-about">O que é o H4ckathon</a></li>
 			<li><a id="link-leite">Arrecadação de Leite</a></li>
 		</ul>
 	</nav>
-	
+
+
+	<article id="programacao">
+		<h1>
+			<big>Programação</big>
+			<small>Como assim?!</small>				
+		</h1>
+		
+
+		<section style="width: 320px;">
+			<div class="texto">
+				<!-- <span class="data-sorteio">14/08 - SORTEIO DOS TIMES</span>			 -->
+			</div>	
+			<img src="http://placehold.it/320x305" alt="">
+		</section>
+
+		<section style="width: 205px;">
+			<div class="texto">
+				<span class="data-programacao">08:00 - 08:30</span>
+				<p>Delicioso Café da manha</p>
+			</div>	
+			<img src="img/cafe-205x150.jpg" alt="">
+		</section>
+		<section style="width: 270px;">
+			<!-- <div class="texto">
+				<span class="data-programacao">08:00 - 08:30</span>
+				<p>Delicioso Café da manha</p>
+			</div>	 -->
+			<img src="http://placehold.it/270x150" alt="">
+		</section>
+		<section style="width: 165px;">
+			<div class="texto">
+				<span class="data-programacao">09:30</span>
+				<p>Hora da fruta</p>
+			</div>	
+			<img src="img/frutas-165x150.jpg" alt="">
+		</section>
+		<section style="width: 200px;">
+			<!-- <div class="texto">
+				<span class="data-programacao">08:00 - 08:30</span>
+				<p>Delicioso Café da manha</p>
+			</div>	 -->
+			<img src="http://placehold.it/200x150" alt="">
+		</section>
+		<section style="width: 165px;">
+			<div class="texto">
+				<span class="data-programacao">15:30</span>
+				<p>Hora da fruta</p>
+			</div>	
+			<img src="img/frutas-165x150.jpg" alt="">
+		</section>
+		<section style="width: 275px;">
+			<!-- <div class="texto">
+				<span class="data-programacao">08:00 - 08:30</span>
+				<p>Delicioso Café da manha</p>
+			</div>	 -->
+			<img src="http://placehold.it/275x150" alt="">
+		</section>		
+		<section style="width: 200px;">
+			<div class="texto">
+				<span class="data-programacao">03:00</span>
+				<p>Dogão da matina</p>
+			</div>	
+			<img src="img/dogao-200x150.jpg" alt="">
+		</section>
+
+		<section style="width: 334px;">
+			<div class="bloco" style="width: 165px;">
+				<!-- <div class="texto">
+					<span class="data-programacao">08:00 - 08:30</span>
+					<p>Delicioso Café da manha</p>
+				</div>	 -->
+				<img src="img/cafe-165x75.jpg" alt="">
+			</div>
+			<div class="bloco" style="width: 165px;">
+				<!-- <div class="texto">
+					<span class="data-programacao">08:00 - 08:30</span>
+					<p>Delicioso Café da manha</p>
+				</div>	 -->
+				<img src="http://placehold.it/165x75" alt="">
+			</div>
+			<div class="bloco" style="width: 334px;">
+				<div class="texto">
+					<span class="data-programacao">08:10</span>
+					<p>Começam as apresentações</p>
+				</div>	
+				<img src="img/apresentacao-334x72.jpg" alt="">
+			</div>
+		</section>			
+		<section style="width: 200px;">
+			<div class="texto">
+				<span class="data-programacao">09:00</span>
+				<p>Anuncio do time vencedor</p>
+			</div>	
+			<img src="img/ganhadores200x150.jpg" alt="">
+		</section>			
+	</article>
+
+
 	<article id="about">
 		<h1>
 			<big>O que é o H4ckathon</big>
@@ -93,24 +192,25 @@
 	
 	<article id="leite">
 		<h1>
-		<big>Arrecadação de Leite</big>
-		<small>Como assim?!</small>	
-			
+			<big>Arrecadação de Leite</big>
+			<small>Como assim?!</small>				
 		</h1>
 			
 			<p>Nessa edição do Hackathon, vai ter solidariedade também! </p>
 
-<p>Estamos mobilizando os participantes para arrecadarmos a maior quantidade de litros de leite, 
-que serão destinados ao Asilo São João Bosco. </p>
+			<p>Estamos mobilizando os participantes para arrecadarmos a maior quantidade de litros de leite, 
+			que serão destinados ao Asilo São João Bosco. </p>
 
-<p>Cada participante pode trazer 3 (três) litros de leite ou R$ 10. A doação, além de ajudar quem recebe, também vai colaborar com os participantes.</p>
+			<p>Cada participante pode trazer 3 (três) litros de leite ou R$ 10. A doação, além de ajudar quem recebe, também vai colaborar com os participantes.</p>
 
-<p>O time que arrecadar a maior quantidade de litros de leite ganha pontos extras na avaliação final (no sábado de manhã). </p>
+			<p>O time que arrecadar a maior quantidade de litros de leite ganha pontos extras na avaliação final (no sábado de manhã). </p>
 
-<p>Mobilize o seu time e vamos todos ajudar! </p>
+			<p>Mobilize o seu time e vamos todos ajudar! </p>
 			
 			<span class="leite"></span>
 	</article>
+
+	
 
 	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jbclock.js"></script>
@@ -130,7 +230,8 @@ que serão destinados ao Asilo São João Bosco. </p>
 		$("#link-leite").click(function(){
             $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
 		})
-		
+
+				
 		$("nav a").click(function(){
             document.querySelector('#video').pause();
 		})

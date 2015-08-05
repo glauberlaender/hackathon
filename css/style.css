@@ -190,9 +190,60 @@ p:first-of-type {
 
 .hack {
 	background: url(../img/hack.svg) no-repeat;
-	 width: 40%;
-  height: 90%;
-  position: absolute;
-  bottom: 0;
-  right: 30px;
+	width: 40%;
+	height: 90%;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
 }
+
+
+#programacao{
+	height: 502px !important;
+	padding: 50px 0; 
+}
+
+#programacao h1{
+	margin: 0 0 67px;
+}
+
+
+#programacao section{
+	position: relative;
+	float: left;
+	margin: 2px 2px 0 2px;
+}
+
+.bloco{
+	display: inline-block;
+	
+}
+
+#programacao section .texto {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+    text-align: left;
+    padding: 15px;
+}
+
+.data-programacao{
+	color: #7f7f7f;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.data-sorteio{
+	display: block;
+    font-size: 22px;
+    color: #000;
+}
+
+#programacao section .texto p{
+	margin: 0;
+	display: inline-block;
+
+}
+
+

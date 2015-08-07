@@ -204,7 +204,7 @@ p:first-of-type {
 }
 
 #programacao h1{
-	margin: 0 0 67px;
+	margin: 0 0 67px 67px;
 }
 
 
@@ -225,19 +225,21 @@ p:first-of-type {
 	width: 100%;
     text-align: left;
     padding: 15px;
+    background-color: rgba(0,0,0, 0.5);
+    height: 100%;
 }
 
 .data-programacao{
-	color: #7f7f7f;
+	color: #fff;
 	font-size: 20px;
-	font-weight: bold;
-	display: inline-block;
+	font-weight: 700;
+	display: block;
 }
 
-.data-sorteio{
+.data-inicio{
 	display: block;
     font-size: 22px;
-    color: #000;
+    color: #fff;
 }
 
 #programacao section .texto p{

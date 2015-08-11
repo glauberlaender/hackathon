@@ -207,21 +207,20 @@ p:first-of-type {
 	margin: 0 0 67px 67px;
 }
 
-
 #programacao section{
-	position: relative;
-	float: left;
-	margin: 2px 2px 0 2px;
+	width: 100%;
+    float: left;
+    overflow: hidden;
 }
 
-.bloco{
-	display: inline-block;
-	
+#programacao section .itens{
+	float: left;
+	margin: 3px;
+	position: relative;
 }
 
 #programacao section .texto {
 	position: absolute;
-	z-index: 9999;
 	width: 100%;
     text-align: left;
     padding: 15px;
@@ -245,7 +244,80 @@ p:first-of-type {
 #programacao section .texto p{
 	margin: 0;
 	display: inline-block;
+}
 
+#programacao section .itens img{
+	width: 100%;
+	height: 100%;
+}
+
+.itens-pequenos{
+	float: left;
+	margin-right: 2px;
+}
+
+.altura72{
+	height: 72px;
+}
+
+.altura75{
+	height: 75px;
+	margin-bottom: 3px;
+}
+
+.altura150{
+	height: 150px;
+}
+
+.altura306{
+	height: 306px;
 }
 
 
+.largura10{
+	width: 10%;
+}
+
+.largura12{
+	width: 12%;
+}
+
+.largura11-8{
+	width: 11.8%;
+}
+
+.largura13{
+	width: 13%;
+}
+
+.largura14-6{
+	width: 14.6%;
+}
+
+.largura15{
+	width: 15%;
+}
+
+.largura16{
+	width: 16%;
+}
+
+.largura23{
+	width: 23%;
+}
+
+.largura28{
+	width: 28%;
+}
+
+.largura49{
+	width: 49%;
+}
+
+.largura50{
+	width: 50%;
+}
+
+.largura100{
+	width: 100%;
+}

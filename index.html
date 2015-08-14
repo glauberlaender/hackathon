@@ -74,6 +74,7 @@
 	<nav>
 		<ul>
 			<li><a id="link-programacao">Programação</a></li>
+			<li><a id="link-equipes">Equipes</a></li>
 			<li><a id="link-about">O que é o H4ckathon</a></li>
 			<li><a id="link-leite">Arrecadação de Leite</a></li>
 		</ul>
@@ -86,7 +87,7 @@
 			<small>Da hora!</small>				
 		</h1>
 		
-		<section>	
+		<section class="fotos">	
 			<div class="itens largura23 altura306">
 				<div class="texto">
 					<span class="data-inicio">21/08 - H4ckathon</span>			
@@ -96,7 +97,7 @@
 
 			<div  class="itens largura12 altura150">
 				<div class="texto">
-					<span class="data-programacao">07:00 - 08:00</span>
+					<span class="data-programacao">07:00 - 08:00 (sexta)</span>
 					<p>Café da manha</p>
 				</div>	
 				<img src="img/cafeDaManha.jpg" alt="">
@@ -152,7 +153,7 @@
 				</div>
 				<div class="itens-pequenos largura100 altura72 ">
 					<div class="texto">
-						<span class="data-programacao">07:00 - 08:00</span>
+						<span class="data-programacao">08:00 - 08:30 (sábado)</span>
 						<p>Café da manha</p>
 					</div>
 					<img src="img/cafeDaManha.jpg" alt="">
@@ -167,7 +168,7 @@
 			</div>
 			<div  class="itens largura16 altura150">
 				<div class="texto">		
-					<span class="data-programacao">08:10</span>
+					<span class="data-programacao">08:30</span>
 					<p>Começam as apresentações</p>						
 				</div>	
 				<img src="img/imgApresentacao.jpg" alt="">	
@@ -175,16 +176,98 @@
 
 			<div class="itens largura18 altura150">
 				<div class="texto">
-					<span class="data-programacao">09:00</span>
+					<span class="data-programacao">09:30</span>
 					<p>Anuncio do time surpreendente</p>
 				</div>	
 				<img src="img/ganhadores.jpg" alt="">	
 			</div>	
-			<div class="itens largura12-6 altura150">
-				<img src="img/ganhadores.jpg" alt="">	
+			<div class="itens largura12-6 altura150 sandro">
+				<div class="texto">
+					<span class="data-programacao">10:00</span>
+					<p>Game Over #partiucama</p>
+				</div>
+				<img src="img/sandro.jpg" alt="">	
 			</div>	
 		</section>
 
+	</article>
+	
+	<article id="equipes">
+		<h1>
+			<big>Equipes</big>
+			<small>Unidos venceremos!</small>				
+		</h1>
+		
+		<p>Obs: Cada time pode convidar um participante de fora para integrar sua equipe. Que tal testarmos alguns candidatos do processo seletivo?</p>
+		
+		<div class="listas">
+			<ul>
+				<li class="head">Equipe A</li>
+				<li>Barbara</li>
+				<li>Higor</li>
+				<li>Diogonc</li>
+				<li>Tiozão</li>
+				<li>Guadalupe</li>
+				<li>Thaís</li>
+				<li>Danielle</li>
+				<li>Clayde</li>
+				<li>Wesley</li>
+				<li>Julienne</li>
+
+			</ul>
+			<ul>
+				<li class="head">Equipe B</li>
+				<li>Bruno Bazinga</li>
+				<li>Ricardo</li>
+				<li>Fabio</li>
+				<li>Nathalia</li>
+				<li>Neli</li>
+				<li>Luiz</li>
+				<li>Evelyn</li>
+				<li>Sr. Stefano</li>
+				<li>Andrea</li>
+				<li>Bruno Facilidades</li>
+			</ul>
+			<ul>
+				<li class="head">Equipe C</li>
+				<li>Alciris</li>
+				<li>Valdeir</li>
+				<li>Renan</li>
+				<li>Edgar</li>
+				<li>Miriam</li>
+				<li>Samuka</li>
+				<li>Jenifer e Sofia</li>
+				<li>Marcel McFly</li>
+				<li>Natiele</li>
+				<li>Iara Brazil</li>
+			</ul>
+			<ul>
+				<li class="head">Equipe D</li>
+				<li>Raphael</li>
+				<li>Bruno Tesouro</li>
+				<li>Pé</li>
+				<li>Magnólia</li>
+				<li>Gefferson</li>
+				<li>Marcela</li>
+				<li>Paulão</li>
+				<li>Juliana</li>
+				<li>Alexandre</li>
+				<li>Keila</li>
+			</ul>
+			<ul>
+				<li class="head">Equipe E</li>
+				<li>Glauber</li>
+				<li>Jorge Silva</li>
+				<li>Sandro</li>
+				<li>Gods</li>
+				<li>Desiree</li>
+				<li>Jimi Rendrix</li>
+				<li>Jhonatan</li>
+				<li>Hiaguera</li>
+				<li>Navs</li>
+			</ul>
+		</div>
+		
 	</article>
 
 
@@ -241,7 +324,14 @@
 		$("#link-leite").click(function(){
             $('html, body').animate({ scrollTop: $('#leite').offset().top }, 'slow');
 		})
-
+		
+		$("#link-programacao").click(function(){
+            $('html, body').animate({ scrollTop: $('#programacao').offset().top }, 'slow');
+		})
+		
+		$("#link-equipes").click(function(){
+            $('html, body').animate({ scrollTop: $('#equipes').offset().top }, 'slow');
+		})
 				
 		$("nav a").click(function(){
             document.querySelector('#video').pause();

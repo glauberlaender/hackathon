@@ -138,11 +138,13 @@ article {
 	background: black;
 	padding: 50px;
 	position: relative;
+	border-bottom: 1px solid #900000;
 }
 
 h1 {
 	display: block;
 	position: relative;
+	text-align: left;
 }
 
 h1 big {
@@ -172,6 +174,7 @@ p {
 	color: white;
 	line-height: 1.5em;
 	margin: 20px 50% 0 150px;
+	text-align: left;
 	
 }
 
@@ -199,12 +202,17 @@ p:first-of-type {
 
 
 #programacao{
-	height: 502px !important;
 	padding: 50px 0; 
 }
 
 #programacao h1{
 	margin: 0 0 67px 67px;
+}
+
+.fotos {
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
 }
 
 #programacao section{
@@ -217,6 +225,51 @@ p:first-of-type {
 	float: left;
 	margin: 3px;
 	position: relative;
+	overflow: hidden;
+}
+
+#equipes {
+	text-align: center;
+}
+
+#equipes ul {
+	width: 19%;
+	display: inline-block;
+	font-family: "Montserrat";
+	text-align: center;
+	border: 2px solid white;
+	padding: 15px;
+	vertical-align: top;
+	height: 450px;
+}
+
+.listas {
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+	left: 0;
+}
+
+#equipes .head {
+	color: #900000;
+	font-size: 30px;
+	margin: 20px 0 30px;
+	opacity: 1 !important;
+}
+
+.sandro img {
+	position: relative;
+    left: -310px;
+}
+
+#equipes li {
+	color: white;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+#equipes li:nth-child(odd) {
+	opacity: 0.5;
 }
 
 #programacao section .texto {
@@ -226,6 +279,7 @@ p:first-of-type {
     padding: 15px;
     background-color: rgba(0,0,0, 0.5);
     height: 100%;
+	z-index: 2;
 }
 
 .data-programacao{
@@ -247,30 +301,32 @@ p:first-of-type {
 }
 
 #programacao section .itens img{
-	width: 100%;
-	height: 100%;
+	width: auto;
+    height: 100%;
+    min-width: 100%;
 }
 
 .itens-pequenos{
 	float: left;
 	margin-right: 2px;
+	overflow: hidden;
 }
 
 .altura72{
-	height: 72px;
+	height: 95px;
 }
 
 .altura75{
-	height: 75px;
+	height: 102px;
 	margin-bottom: 3px;
 }
 
 .altura150{
-	height: 150px;
+	height: 200px;
 }
 
 .altura306{
-	height: 306px;
+	height: 406px;
 }
 
 
@@ -291,6 +347,7 @@ p:first-of-type {
 
 .largura13{
 	width: 13%;
+	overflow: visible !important;
 }
 
 .largura14-6{

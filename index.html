@@ -75,6 +75,7 @@
 		<ul>
 			<li><a id="link-programacao">Programação</a></li>
 			<li><a id="link-equipes">Equipes</a></li>
+			<li><a id="link-regras">Regras</a></li>
 			<li><a id="link-about">O que é o H4ckathon</a></li>
 			<li><a id="link-leite">Arrecadação de Leite</a></li>
 		</ul>
@@ -269,6 +270,26 @@
 		</div>
 		
 	</article>
+	
+	<article id="regras">
+		<h1>
+			<big>Regras</big>
+			<small>O que esperamos!</small>				
+		</h1>
+		
+		<p>No final do evento acontece a apresentação das ideias. Nós esperamos que as soluções atendam as necessidades listadas abaixo:</p>
+		
+			<ul class="regras">
+				<li>MVP <small>- Estar atento a resolver um problema de forma mínima</small></li>
+				<li>Software Funcionando <small>- deve estar pronto para usar</small></li>
+				<li>Publicado em ambiente de produção</small></li>
+				<li>Design responsivo <small>- funcionar no desktop, tablet e mobile</small></li>
+				<li>Usabilidade<small>- o produto deve ser fácil de usar</small></li>
+				<li>Modelo de Negócio <small>- Possível Rentabilidade do produto</small></li>
+				<li>Alcance <small>- Número de pessoas impactadas com a solução</small></li>
+				<li>Integração do Time <small>- como diferentes papéis agiram para a concepção do produto</small></li>
+			</ul>
+	</article>
 
 
 	<article id="about">
@@ -331,6 +352,10 @@
 		
 		$("#link-equipes").click(function(){
             $('html, body').animate({ scrollTop: $('#equipes').offset().top }, 'slow');
+		})
+		
+		$("#link-regras").click(function(){
+            $('html, body').animate({ scrollTop: $('#regras').offset().top }, 'slow');
 		})
 				
 		$("nav a").click(function(){

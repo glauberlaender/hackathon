@@ -386,3 +386,23 @@ p:first-of-type {
 .largura100{
 	width: 100%;
 }
+
+.regras {
+	font-size: 26px;
+	list-style-type: square;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin: 50px 20% 0 170px;
+}
+
+.regras li {
+	color: #900000;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.regras small {
+	color: white;
+	font-size: 18px;
+	text-transform: none;
+}

@@ -272,6 +272,34 @@ p:first-of-type {
 	opacity: 0.5;
 }
 
+.votacao {
+	margin: 60px 0;
+    margin-left: 150px;
+}
+
+.votacao li {
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #900000;
+	font-family: "Montserrat";
+}
+
+.votacao li.marcado span {
+	background: #900000;
+}
+
+.votacao li span {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: block;
+	border: 3px solid #900000;
+	margin-bottom: 10px;
+}
+
 #programacao section .texto {
 	position: absolute;
 	width: 100%;

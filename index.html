@@ -76,11 +76,11 @@
 			<li><a id="link-programacao">Programação</a></li>
 			<li><a id="link-equipes">Equipes</a></li>
 			<li><a id="link-regras">Regras</a></li>
-			<li><a id="link-about">O que é o H4ckathon</a></li>
+			<li><a id="link-votacao">Votação</a></li>
+			<li><a id="link-about">About</a></li>
 			<li><a id="link-leite">Arrecadação de Leite</a></li>
 		</ul>
 	</nav>
-
 
 	<article id="programacao">
 		<h1>
@@ -290,6 +290,34 @@
 				<li>Integração do Time <small>- como diferentes papéis agiram para a concepção do produto</small></li>
 			</ul>
 	</article>
+	
+	<article id="votacao">
+		<h1>
+			<big>Votação</big>
+			<small>Notas por time!!</small>	
+			
+		</h1>
+		
+			<p>Através de um formulário de votação online, seu time dará uma nota (1-10) para os demais times, ou seja, seu time não poderá votar no próprio time.</p>
+			
+			<ul class="votacao">
+				<li><span></span>1</li>
+				<li><span></span>2</li>
+				<li><span></span>3</li>
+				<li><span></span>4</li>
+				<li><span></span>5</li>
+				<li><span></span>6</li>
+				<li><span></span>7</li>
+				<li class="marcado"><span></span>8</li>
+				<li><span></span>9</li>
+				<li><span></span>10</li>
+			</ul>
+			
+			<p>Pontuação do leite: +3 pontos para o time que mais arrecadar caixas de leite.</p>
+			
+			<p>Em caso de empate: Os times perdedores votarão para UMA ideia vencedora.</p>
+			
+	</article>
 
 
 	<article id="about">
@@ -356,6 +384,10 @@
 		
 		$("#link-regras").click(function(){
             $('html, body').animate({ scrollTop: $('#regras').offset().top }, 'slow');
+		})
+		
+		$("#link-votacao").click(function(){
+            $('html, body').animate({ scrollTop: $('#votacao').offset().top }, 'slow');
 		})
 				
 		$("nav a").click(function(){

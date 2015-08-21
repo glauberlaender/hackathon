@@ -12,7 +12,7 @@
 <body>
 	<article id="about">
 		<h1>
-			<big>Cronômetro</big>
+			<big>Hackatômetro</big>
 			<small>A treta começou!!</small>	
 		</h1>
 		
@@ -39,7 +39,7 @@
 		
 		$('article').css('height', alturaDaTela + "px");
 
-		cronometro.countdown("2015/08/22")
+		cronometro.countdown("2015/08/22 08:00")
 			.on("update.countdown", function(event) {
 				hora.text(event.strftime('%H:'));
 				minuto.text(event.strftime('%M:'));

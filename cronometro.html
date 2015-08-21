@@ -10,30 +10,50 @@
 	<link href='http://fonts.googleapis.com/css?family=Chewy|Montserrat:400,700' rel='stylesheet' type='text/css' />
 </head>
 <body>
-
 	<article id="about">
 		<h1>
 			<big>Cronômetro</big>
 			<small>A treta começou!!</small>	
-			
 		</h1>
 		
-			<div class="cronometro is-tempo-acabando">
-				<span class="hora">24:</span>
-				<span class="minuto">00:</span>
-				<span class="segundo">00</span>
-				<span class="tempo-acabou">FINISH IT!</span>
-			</div>
-			
-			<span class="hack"></span>
+		<div class="cronometro">
+			<span class="hora">24:</span>
+			<span class="minuto">00:</span>
+			<span class="segundo">00</span>
+			<span class="tempo-acabou">FINISH IT!</span>
+		</div>
+		
+		<span class="hack"></span>
 	</article>
 	
 	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
 	
 	<script>
 		var alturaDaTela = $(window).height();
+		var cronometro = $("div.cronometro");
+		var hora = $("div.cronometro span.hora");
+		var minuto = $("div.cronometro span.minuto");
+		var segundo = $("div.cronometro span.segundo");
+		var tempoAcabou = $("span.tempo-acabou");
 		
 		$('article').css('height', alturaDaTela + "px");
+
+		cronometro.countdown("2015/08/22")
+			.on("update.countdown", function(event) {
+				hora.text(event.strftime('%H:'));
+				minuto.text(event.strftime('%M:'));
+				segundo.text(event.strftime('%S'));
+
+				if (hora.text() === "00:" && !cronometro.hasClass("is-tempo-acabando"))
+					cronometro.addClass("is-tempo-acabando");
+   			})
+			.on("finish.countdown", function() {
+				hora.hide();
+				minuto.hide();
+				segundo.hide();
+				tempoAcabou.show();
+   			});
 	</script>
 </body>
 </html>
